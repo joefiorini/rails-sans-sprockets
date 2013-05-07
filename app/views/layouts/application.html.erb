@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Template • TodoMVC</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag "/styles/main.css" %>
+  </head>
+  <body>
+
+
+    <section id="todoapp">
+      <%= yield %>
+    </section>
+    <footer id="info">
+      <p>Double-click to edit a todo</p>
+      <!-- Remove the below line ↓ -->
+      <p>Template by <a href="http://github.com/sindresorhus">Sindre Sorhus</a></p>
+      <!-- Change this out with your name and url ↓ -->
+      <p>Created by <a href="http://todomvc.com">you</a></p>
+      <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+    </footer>
+    <!-- Scripts here. Don't remove this ↓ -->
+    <script src="components/todomvc-common/base.js"></script>
+
+    <%= javascript_include_tag "/components/requirejs/require.js", data: { main: "/client/main.js" } %>
+</body>
+</html>

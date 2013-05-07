@@ -1,0 +1,22 @@
+{
+  "name": "no-sprockets",
+  "version": "0.0.0",
+  "description": "== Welcome to Rails",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "readmeFilename": "README.rdoc",
+  "devDependencies": {
+    "grunt-cli": "~0.1.7",
+    "grunt": "~0.4.1",
+    "bower": "~0.9.2"
+  }
+}

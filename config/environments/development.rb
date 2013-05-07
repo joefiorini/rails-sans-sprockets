@@ -58,11 +58,7 @@ NoSprockets::Application.configure do
       File.read(source_file)
     }
 
-  load 'ext/sass/bower_importer.rb'
   config.middleware.use Rack::SassCompiler,
     :source_dir => 'app/styles',
-    :url => '/styles',
-    sass_options: {
-      load_paths: [Sass::Importers::BowerImporter.new("components")]
-    }
+    :url => '/styles'
 end

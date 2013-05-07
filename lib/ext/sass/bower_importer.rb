@@ -17,9 +17,7 @@ module Sass
           path = File.join(@root, name)
           SUPPORTED_EXTNAMES.each do |extname|
             lookup = "#{path}.#{extname}"
-            Rails.logger.debug "looking up: #{lookup}"
             if File.exist? lookup
-              Rails.logger.debug "FOUND!!!"
               return [[lookup, extensions[extname]]]
             end
           end
